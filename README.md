@@ -1,4 +1,4 @@
-<img src="https://lbegey.fr/imgs/app1.png" alt="Alt text" title="Optional title"><br>
+<img src="https://lbegey.fr/imgs/app1.png"><br>
 
 No need for big description.<br>
 Simple and modern App page to share.<br>
