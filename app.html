@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>app</title>
+    <link rel="icon" type="image/x-icon" href="imgs/favico.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <style>
+        :root {
+            font-family: 'Inter', sans-serif;
+        }
+
+        body,
+        html {
+            scroll-behavior: smooth !important;
+        }
+    </style>
+</head>
+
+<body class="antialiased px-4 md:px-0">
+    <header>
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-10">
+            <div class="flex items-center">
+                <a href="/app.html" style="font-family: 'Nothing You Could Do', cursive;"
+                    class="text-xl font-bold">App</a>
+                <button
+                    class="ml-auto bg-black rounded-lg hover:bg-black/80 duration-300 transition-colors border border-transparent px-8 py-2.5">
+                    <svg class="w-5 h-5 sm:h-6 sm:w-6" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.8426 17.1449C20.5099 17.9135 20.1161 18.6211 19.6598 19.2715C19.0378 20.1583 18.5286 20.7721 18.1361 21.113C17.5277 21.6724 16.8759 21.959 16.1779 21.9753C15.6768 21.9753 15.0725 21.8327 14.3691 21.5434C13.6633 21.2555 13.0148 21.113 12.4217 21.113C11.7998 21.113 11.1327 21.2555 10.4193 21.5434C9.70469 21.8327 9.12904 21.9834 8.68892 21.9984C8.01957 22.0269 7.35239 21.7322 6.68644 21.113C6.26139 20.7422 5.72974 20.1067 5.09285 19.2063C4.40951 18.2449 3.84772 17.13 3.4076 15.8589C2.93624 14.486 2.69995 13.1565 2.69995 11.8694C2.69995 10.3951 3.01853 9.12345 3.65665 8.05784C4.15815 7.20191 4.82533 6.52672 5.66035 6.03105C6.49537 5.53539 7.39761 5.2828 8.36925 5.26664C8.9009 5.26664 9.59809 5.43109 10.4645 5.75429C11.3284 6.07858 11.8832 6.24303 12.1264 6.24303C12.3082 6.24303 12.9245 6.05074 13.9692 5.66738C14.9571 5.31186 15.7909 5.16466 16.474 5.22264C18.3249 5.37202 19.7155 6.10167 20.6402 7.41619C18.9849 8.4192 18.166 9.82403 18.1823 11.6262C18.1972 13.03 18.7065 14.1981 19.7073 15.1256C20.1609 15.5561 20.6674 15.8888 21.231 16.1251C21.1087 16.4795 20.9797 16.819 20.8426 17.1449ZM16.5975 0.440369C16.5975 1.54062 16.1956 2.56792 15.3944 3.51878C14.4275 4.64917 13.258 5.30236 11.9898 5.19929C11.9736 5.06729 11.9642 4.92837 11.9642 4.78239C11.9642 3.72615 12.424 2.59576 13.2406 1.67152C13.6483 1.20356 14.1667 0.814453 14.7955 0.504058C15.4229 0.198295 16.0163 0.0292007 16.5744 0.000244141C16.5907 0.147331 16.5975 0.294426 16.5975 0.440355V0.440369Z"
+                            fill="white" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <section id="hero">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-lg py-10 pb-20">
+            <div class="flex flex-col md:flex-row items-center gap-20">
+                <div style="min-width:300px;" data-aos="fade-right" data-aos-delay="50">
+                    <img class="w-full max-w-[300px]" src="./imgs/iphone-mockup.png" alt="">
+                </div>
+                <div data-aos="fade-left" data-aos-delay="200">
+                    <h1 class="text-2xl font-bold lg:text-5xl pb-8">
+                        <span style="font-family: 'Nothing You Could Do', cursive;">Lorem ipsum</span><br>
+                        et dolor filis fot ava
+                    </h1>
+                    <p class="text-xl pb-8">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro beatae error laborum ab amet
+                        sunt recusandae? Reiciendis natus perspiciatis optio.
+                    </p>
+                    <a href="#"
+                        class="mb-8 inline-block text-white bg-black rounded-lg hover:bg-black/80 duration-300 transition-colors border border-transparent px-8 py-2.5">
+                        Download on the App Store <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <div class="bg-gray-100 p-5 rounded max-w-[292px] flex gap-2 items-center text-center">
+                        <div class="flex item-center">
+                            <svg class="w-5 h-5 text-gray-900 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                            </svg>
+
+                            <svg class="w-5 h-5 text-gray-900 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                            </svg>
+
+                            <svg class="w-5 h-5 text-gray-900 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                            </svg>
+
+                            <svg class="w-5 h-5 text-gray-900 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                            </svg>
+
+                            <svg class="w-5 h-5 text-gray-900 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                            </svg>
+                        </div>
+                        <span class="text-dark text-xs">4.9/5 (275k Reviews)</span>
+                    </div>                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="why" class="bg-[#f1f1f1]">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-20">
+            <h2 class="text-2xl font-bold lg:text-5xl pb-8">
+                Why use <span style="font-family: 'Nothing You Could Do', cursive;">app</span> ?
+            </h2>
+            <p class="mb-16 text-xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates a distinctio rem? Laboriosam
+                architecto nihil !
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-16 lg:gap-x-24 gap-y-20">
+                <div>
+                    <div class="flex items-center justify-center w-8 h-8 mb-4 text-gray-100 bg-black rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a3 3 0 01-4.8 2.401A4 4 0 1114 10a1 1 0 102 0c0-1.537-.586-3.07-1.757-4.243zM12 10a2 2 0 10-4 0 2 2 0 004 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h3 class="mb-2 text-base font-semibold leading-tight text-gray-900">Personal Emails</h3>
+                    <p class="text-sm text-gray-500">Hand crafted dashboards for everything from Recurring Revenue to
+                        Customer Churn.</p>
+                </div>
+                <div>
+                    <div class="flex items-center justify-center w-8 h-8 mb-4 text-gray-100 bg-black rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M7 2a1 1 0 00-.707 1.707L7 4.414v3.758a1 1 0 01-.293.707l-4 4C.817 14.769 2.156 18 4.828 18h10.343c2.673 0 4.012-3.231 2.122-5.121l-4-4A1 1 0 0113 8.172V4.414l.707-.707A1 1 0 0013 2H7zm2 6.172V4h2v4.172a3 3 0 00.879 2.12l1.027 1.028a4 4 0 00-2.171.102l-.47.156a4 4 0 01-2.53 0l-.563-.187a1.993 1.993 0 00-.114-.035l1.063-1.063A3 3 0 009 8.172z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h3 class="mb-2 text-base font-semibold leading-tight text-gray-900">Why a beaker icon?</h3>
+                    <p class="text-sm text-gray-500">Your central hub that helps you see, and react to, absolutely
+                        everything that’s happening.</p>
+                </div>
+                <div>
+                    <div class="flex items-center justify-center w-8 h-8 mb-4 text-gray-100 bg-black rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.415l.707-.708zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h3 class="mb-2 text-base font-semibold leading-tight text-gray-900">Clickable</h3>
+                    <p class="text-sm text-gray-500">Stay informed with daily, weekly, or monthly reports on all your
+                        insights data.</p>
+                </div>
+                <div>
+                    <div class="flex items-center justify-center w-8 h-8 mb-4 text-gray-100 bg-black rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M6.625 2.655A9 9 0 0119 11a1 1 0 11-2 0 7 7 0 00-9.625-6.492 1 1 0 11-.75-1.853zM4.662 4.959A1 1 0 014.75 6.37 6.97 6.97 0 003 11a1 1 0 11-2 0 8.97 8.97 0 012.25-5.953 1 1 0 011.412-.088z"
+                                clip-rule="evenodd" />
+                            <path fill-rule="evenodd"
+                                d="M5 11a5 5 0 1110 0 1 1 0 11-2 0 3 3 0 10-6 0c0 1.677-.345 3.276-.968 4.729a1 1 0 11-1.838-.789A9.964 9.964 0 005 11zm8.921 2.012a1 1 0 01.831 1.145 19.86 19.86 0 01-.545 2.436 1 1 0 11-1.92-.558c.207-.713.371-1.445.49-2.192a1 1 0 011.144-.83z"
+                                clip-rule="evenodd" />
+                            <path fill-rule="evenodd"
+                                d="M10 10a1 1 0 011 1c0 2.236-.46 4.368-1.29 6.304a1 1 0 01-1.838-.789A13.952 13.952 0 009 11a1 1 0 011-1z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h3 class="mb-2 text-base font-semibold leading-tight text-gray-900">Finger Printing</h3>
+                    <p class="text-sm text-gray-500">Our forecasting is your magical crystal ball that helps you predict
+                        and plan for the future.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="vision">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-20">
+            <div class="flex flex-col md:flex-row gap-10 items-center">
+                <div class="w-full max-w-[200px]">
+                    <img class="w-full max-w-[200px]" src="./imgs/4.Globe.png" alt="">
+                </div>
+                <div class="grid gap-12">
+                    <div>
+                        <h2 class="text-2xl font-bold lg:text-5xl pb-8">
+                            <span style="font-family: 'Nothing You Could Do', cursive;">Our</span> vision
+                        </h2>
+                        <p class="mt-3">
+                            For as long as there have been cities, the public square has been a fundamental part of
+                            the urban landscape - an open, approachable space to meet and engage with friends and
+                            neighbours. Space aims to capture this spirit of bringing people together in an
+                            exciting, welcoming environment.
+                        </p>
+                    </div>
+                    <div class="space-y-6 lg:space-y-10">
+                        <div class="flex">
+                            <svg class="flex-shrink-0 mt-2 h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" />
+                                <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" />
+                                <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2" />
+                                <path d="M10 6h4" />
+                                <path d="M10 10h4" />
+                                <path d="M10 14h4" />
+                                <path d="M10 18h4" /></svg>
+                            <div class="ms-5 sm:ms-8">
+                                <h3 class="text-base sm:text-lg font-semibold">
+                                    High quality Co-Living spaces
+                                </h3>
+                                <p class="mt-1">
+                                    Our fully furnished spaces are designed and purpose-built with Co-Living in
+                                    mind, featuring high-end finishes and amenities that go far beyond traditional
+                                    apartment buildings.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <svg class="flex-shrink-0 mt-2 h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
+                            <div class="ms-5 sm:ms-8">
+                                <h3 class="text-base sm:text-lg font-semibold">
+                                    Fostering vibrant communities
+                                </h3>
+                                <p class="mt-1">
+                                    Our passion is bringing people together. Beyond creating beautiful spaces, we
+                                    provide shared experiences.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <svg class="flex-shrink-0 mt-2 h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M7 10v12" />
+                                <path
+                                    d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3 3.88Z" />
+                            </svg>
+                            <div class="ms-5 sm:ms-8">
+                                <h3 class="text-base sm:text-lg font-semibold">
+                                    Simple and all-inclusive
+                                </h3>
+                                <p class="mt-1">
+                                    We worry about the details so that our residents don't have to. From our online
+                                    application process to simple, all-inclusive billing we aim to make the living
+                                    experience as effortless as possible.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="FAQ" class="bg-[#f1f1f1]">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-20">
+            <div class="flex items-center">
+                <h2 class="text-2xl font-bold lg:text-5xl pb-8"><span
+                    style="font-family: 'Nothing You Could Do', cursive;">Frequently</span> Asked Questions
+            </h2>
+            <img class="ml-auto w-full max-w-[200px]" src="./imgs/1.Newspaper.png" alt="">
+            </div>
+            
+            <div class="grid grid-cols-1 gap-0 md:grid-cols-2 md:gap-16">
+                <div>
+                    <h5 class="mt-10 mb-3 font-semibold text-gray-900">What is App?</h5>
+                    <p>
+                        App is a powerful tool for product managers and SaaS product owners to gather, organize
+                        and respond to feedback and feature requests from their customers with ease. Designed to enable
+                        your customers to provide feedback easily, so that you can build products better for them.
+                    </p>
+                    <h5 class="mt-10 mb-3 font-semibold text-gray-900">Can I try App for free?</h5>
+                    <p>Yes. You can try App free for 7 (seven) days. No restrictions on the features or users.</p>
+                    <h5 class="mt-10 mb-3 font-semibold text-gray-900">Is there a discount for Startups and Colleges?
+                    </h5>
+                    <p>
+                        Yes. We are a startup too, and we would love to be with you on this journey. There is a
+                        $10/month plan for startups and educational institutions. Check your eligibility
+                        <a href="https://help.App.co/faq/startup-eligibility/" target="_blank">here</a>.
+                    </p>
+                    <h5 class="mt-10 mb-3 font-semibold text-gray-900">Do the subscriptions renew automatically?</h5>
+                    <p>
+                        Yes. The billing happens every month automagically. You will receive a renewal notice three days
+                        before the actual renewal happens. We use the amazing tool called
+                        <a href="https://paddle.com" target="_blank">Paddle</a> for processing payments.
+                    </p>
+                    <h5 class="mt-10 mb-3 font-semibold text-gray-900">Is App free for open-source?</h5>
+                    <p>Yes. No strings attached. Free forever.</p>
+                </div>
+                <div>
+                    <h5 class="mt-10 mb-3 font-semibold text-gray-900">Why App?</h5>
+                    <p>
+                        App was created at <a href="https://www.skcript.com/" target="_blank">Skcript</a>, to
+                        gather feedback on our products and services from our customers. Our horizon slowly but steadily
+                        started expanding, and today, over 800 organizations rely on App to organize, their
+                        feedback. Our promise has always been the same; listen to customers, build what they need, and
+                        grow
+                        with them.
+                    </p>
+                    <p>With App, you will be supporting a team of bootstrapped engineers, who are building,
+                        improving and designing App, every single day.</p>
+                    <h5 class="mt-10 mb-3 font-semibold text-gray-900">Can I self-host App?</h5>
+                    <p>Yes. Only for enterprise customers.</p>
+                    <h5 class="mt-10 mb-3 font-semibold text-gray-900">Can I cancel the plan at any time?</h5>
+                    <p>It will be a sad day for our team, and we would do whatever it takes to make you our happiest
+                        customer. But if you still insist, you can.</p>
+                    <h5 class="mt-10 mb-3 font-semibold text-gray-900">How do I contact support for more information?
+                    </h5>
+                    <p>
+                        There are multiple support channels for us. If you prefer email, please write to
+                        support@App.co. If you prefer chat support, please
+                        <a href="#" class="underline">click here</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-20">
+            <h2 class="text-2xl font-bold lg:text-5xl pb-8">
+                <span style="font-family: 'Nothing You Could Do', cursive;">Testimonials</span>
+            </h2>
+            <div class="swiper">
+                <div class="swiper-wrapper items-center flex flex-row">
+                    <div class="swiper-slide">
+                        <div class="flex flex-col gap-8">
+                            <div
+                                class="bg-gradient-to-b from-slate-50 to-slate-100 w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600 ">
+                                    <span class="text-lg font-bold text-slate-800">
+                                        “
+                                    </span>
+                                    To get social media testimonials like these, keep your customers engaged with your
+                                    social
+                                    media
+                                    accounts by posting regularly yourself
+                                    <span class="text-lg font-bold text-slate-800">
+                                        ”
+                                    </span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="profil" src="./imgs/LB_arrondi.png"
+                                            class="mx-auto object-cover rounded-full h-10 w-10 ">
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-slate-800">
+                                            Laurent Begey
+                                        </span>
+                                        <span class="flex items-center text-xs ">
+                                            User of app
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-gradient-to-b from-slate-50 to-slate-100 w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600 ">
+                                    <span class="text-lg font-bold text-slate-800">
+                                        “
+                                    </span>
+                                    To get social media testimonials like these, keep your customers engaged with your
+                                    social
+                                    media
+                                    accounts by posting regularly yourself
+                                    <span class="text-lg font-bold text-slate-800">
+                                        ”
+                                    </span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="profil" src="./imgs/LB_arrondi.png"
+                                            class="mx-auto object-cover rounded-full h-10 w-10 ">                                            
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-slate-800">
+                                            Laurent Begey
+                                        </span>
+                                        <span class="flex items-center text-xs ">
+                                            User of app
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col gap-8">
+                            <div
+                                class="bg-gradient-to-b from-slate-50 to-slate-100 w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600 ">
+                                    <span class="text-lg font-bold text-slate-800">
+                                        “
+                                    </span>
+                                    To get social media testimonials like these, keep your customers engaged with your
+                                    social
+                                    media
+                                    accounts by posting regularly yourself
+                                    <span class="text-lg font-bold text-slate-800">
+                                        ”
+                                    </span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="profil" src="./imgs/LB_arrondi.png"
+                                            class="mx-auto object-cover rounded-full h-10 w-10 " >
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-slate-800">
+                                            Laurent Begey
+                                        </span>
+                                        <span class="flex items-center text-xs ">
+                                            User of app
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-gradient-to-b from-slate-50 to-slate-100 w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600 ">
+                                    <span class="text-lg font-bold text-slate-800">
+                                        “
+                                    </span>
+                                    To get social media testimonials like these, keep your customers engaged with your
+                                    social
+                                    mediaaze azeaze aze aze aze aze aze aze aze aze aze aze
+                                    accounts by posting regularly yourself
+                                    <span class="text-lg font-bold text-slate-800">
+                                        ”
+                                    </span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="profil" src="./imgs/LB_arrondi.png"
+                                            class="mx-auto object-cover rounded-full h-10 w-10 " >
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-slate-800">
+                                            Laurent Begey
+                                        </span>
+                                        <span class="flex items-center text-xs ">
+                                            User of app
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col gap-8">
+                            <div
+                                class="bg-gradient-to-b from-slate-50 to-slate-100 w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600 ">
+                                    <span class="text-lg font-bold text-slate-800">
+                                        “
+                                    </span>
+                                    To get social media testimonials like these, keep your customers engaged with your
+                                    social
+                                    media
+                                    accounts by posting regularly yourself
+                                    <span class="text-lg font-bold text-slate-800">
+                                        ”
+                                    </span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="profil" src="./imgs/LB_arrondi.png"
+                                            class="mx-auto object-cover rounded-full h-10 w-10 " >
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-slate-800">
+                                            Laurent Begey
+                                        </span>
+                                        <span class="flex items-center text-xs ">
+                                            User of app
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-gradient-to-b from-slate-50 to-slate-100 w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600 ">
+                                    <span class="text-lg font-bold text-slate-800">
+                                        “
+                                    </span>
+                                    To get social media testimonials like these, keep your customers engaged with your
+                                    social
+                                    mediaaze aze aze aze aze aze aze azeaze aze aze aze aze aze aze aze za
+                                    accounts by posting regularly yourself
+                                    <span class="text-lg font-bold text-slate-800">
+                                        ”
+                                    </span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="profil" src="./imgs/LB_arrondi.png"
+                                            class="mx-auto object-cover rounded-full h-10 w-10 " >
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-slate-800">
+                                            Laurent Begey
+                                        </span>
+                                        <span class="flex items-center text-xs ">
+                                            User of app
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col gap-8">
+                            <div
+                                class="bg-gradient-to-b from-slate-50 to-slate-100 w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600 ">
+                                    <span class="text-lg font-bold text-slate-800">
+                                        “
+                                    </span>
+                                    To get social media testimonials like these, keep your customers engaged with your
+                                    social
+                                    media
+                                    accounts by posting regularly yourself
+                                    <span class="text-lg font-bold text-slate-800">
+                                        ”
+                                    </span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="profil" src="./imgs/LB_arrondi.png"
+                                            class="mx-auto object-cover rounded-full h-10 w-10 " >
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-slate-800">
+                                            Laurent Begey
+                                        </span>
+                                        <span class="flex items-center text-xs ">
+                                            User of app
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-gradient-to-b from-slate-50 to-slate-100 w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600 ">
+                                    <span class="text-lg font-bold text-slate-800">
+                                        “
+                                    </span>
+                                    To get social media testimonials like these, keep your customers engaged with your
+                                    social
+                                    media
+                                    accounts by posting regularly yourself
+                                    <span class="text-lg font-bold text-slate-800">
+                                        ”
+                                    </span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="profil" src="./imgs/LB_arrondi.png"
+                                            class="mx-auto object-cover rounded-full h-10 w-10 " >
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-slate-800">
+                                            Laurent Begey
+                                        </span>
+                                        <span class="flex items-center text-xs ">
+                                            User of app
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col gap-8">
+                            <div
+                                class="bg-gradient-to-b from-slate-50 to-slate-100 w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600 ">
+                                    <span class="text-lg font-bold text-slate-800">
+                                        “
+                                    </span>
+                                    To get social media testimonials like these, keep your customers engaged with your
+                                    social
+                                    media
+                                    accounts by posting regularly yourself
+                                    <span class="text-lg font-bold text-slate-800">
+                                        ”
+                                    </span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="profil" src="./imgs/LB_arrondi.png"
+                                            class="mx-auto object-cover rounded-full h-10 w-10 " >
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-slate-800">
+                                            Laurent Begey
+                                        </span>
+                                        <span class="flex items-center text-xs ">
+                                            User of app
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-gradient-to-b from-slate-50 to-slate-100 w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600 ">
+                                    <span class="text-lg font-bold text-slate-800">
+                                        “
+                                    </span>
+                                    To get social media testimonials like these, keep your customers engaged with your
+                                    social
+                                    media
+                                    accounts by posting regularly yourself
+                                    <span class="text-lg font-bold text-slate-800">
+                                        ”
+                                    </span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="profil" src="./imgs/LB_arrondi.png"
+                                            class="mx-auto object-cover rounded-full h-10 w-10 " >
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-slate-800">
+                                            Laurent Begey
+                                        </span>
+                                        <span class="flex items-center text-xs ">
+                                            User of app
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col gap-8">
+                            <div
+                                class="bg-gradient-to-b from-slate-50 to-slate-100 w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600 ">
+                                    <span class="text-lg font-bold text-slate-800">
+                                        “
+                                    </span>
+                                    To get social media testimonials like these, keep your customers engaged with your
+                                    social
+                                    media
+                                    accounts by posting regularly yourself
+                                    <span class="text-lg font-bold text-slate-800">
+                                        ”
+                                    </span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="profil" src="./imgs/LB_arrondi.png"
+                                            class="mx-auto object-cover rounded-full h-10 w-10 " >
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-slate-800">
+                                            Laurent Begey
+                                        </span>
+                                        <span class="flex items-center text-xs ">
+                                            User of app
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-gradient-to-b from-slate-50 to-slate-100 w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600 ">
+                                    <span class="text-lg font-bold text-slate-800">
+                                        “
+                                    </span>
+                                    To get social media testimonials like these, keep your customers engaged with your
+                                    social
+                                    mediaaze azeaze aze aze aze aze aze aze aze aze aze aze
+                                    accounts by posting regularly yourself
+                                    <span class="text-lg font-bold text-slate-800">
+                                        ”
+                                    </span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="profil" src="./imgs/LB_arrondi.png"
+                                            class="mx-auto object-cover rounded-full h-10 w-10 " >
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-slate-800">
+                                            Laurent Begey
+                                        </span>
+                                        <span class="flex items-center text-xs ">
+                                            User of app
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col gap-8">
+                            <div
+                                class="bg-gradient-to-b from-slate-50 to-slate-100 w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600 ">
+                                    <span class="text-lg font-bold text-slate-800">
+                                        “
+                                    </span>
+                                    To get social media testimonials like these, keep your customers engaged with your
+                                    social
+                                    media
+                                    accounts by posting regularly yourself
+                                    <span class="text-lg font-bold text-slate-800">
+                                        ”
+                                    </span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="profil" src="./imgs/LB_arrondi.png"
+                                            class="mx-auto object-cover rounded-full h-10 w-10 " >
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-slate-800">
+                                            Laurent Begey
+                                        </span>
+                                        <span class="flex items-center text-xs ">
+                                            User of app
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-gradient-to-b from-slate-50 to-slate-100 w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600 ">
+                                    <span class="text-lg font-bold text-slate-800">
+                                        “
+                                    </span>
+                                    To get social media testimonials like these, keep your customers engaged with your
+                                    social
+                                    mediaaze aze aze aze aze aze aze azeaze aze aze aze aze aze aze aze za
+                                    accounts by posting regularly yourself
+                                    <span class="text-lg font-bold text-slate-800">
+                                        ”
+                                    </span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="profil" src="./imgs/LB_arrondi.png"
+                                            class="mx-auto object-cover rounded-full h-10 w-10 " >
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-slate-800">
+                                            Laurent Begey
+                                        </span>
+                                        <span class="flex items-center text-xs ">
+                                            User of app
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col gap-8">
+                            <div
+                                class="bg-gradient-to-b from-slate-50 to-slate-100 w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600 ">
+                                    <span class="text-lg font-bold text-slate-800">
+                                        “
+                                    </span>
+                                    To get social media testimonials like these, keep your customers engaged with your
+                                    social
+                                    media
+                                    accounts by posting regularly yourself
+                                    <span class="text-lg font-bold text-slate-800">
+                                        ”
+                                    </span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="profil" src="./imgs/LB_arrondi.png"
+                                            class="mx-auto object-cover rounded-full h-10 w-10 " >
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-slate-800">
+                                            Laurent Begey
+                                        </span>
+                                        <span class="flex items-center text-xs ">
+                                            User of app
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-gradient-to-b from-slate-50 to-slate-100 w-72 shadow-lg mx-auto rounded-xl p-4">
+                                <p class="text-gray-600 ">
+                                    <span class="text-lg font-bold text-slate-800">
+                                        “
+                                    </span>
+                                    To get social media testimonials like these, keep your customers engaged with your
+                                    social
+                                    media
+                                    accounts by posting regularly yourself
+                                    <span class="text-lg font-bold text-slate-800">
+                                        ”
+                                    </span>
+                                </p>
+                                <div class="flex items-center mt-4">
+                                    <a href="#" class="relative block">
+                                        <img alt="profil" src="./imgs/LB_arrondi.png"
+                                            class="mx-auto object-cover rounded-full h-10 w-10 " >
+                                    </a>
+                                    <div class="flex flex-col justify-between ml-2">
+                                        <span class="text-sm font-semibold text-slate-800">
+                                            Laurent Begey
+                                        </span>
+                                        <span class="flex items-center text-xs ">
+                                            User of app
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#f1f1f1]">
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-10">
+            <div class="flex items-center">
+                <p class="mb-8 text-sm text-center text-gray-700 md:text-left md:mb-0">© Copyright 2020 Skcript. All
+                    Rights Reserved.</p>
+                <button
+                    class="ml-auto bg-black rounded-lg hover:bg-black/80 duration-300 transition-colors border border-transparent px-8 py-2.5">
+                    <svg class="w-5 h-5 sm:h-6 sm:w-6" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.8426 17.1449C20.5099 17.9135 20.1161 18.6211 19.6598 19.2715C19.0378 20.1583 18.5286 20.7721 18.1361 21.113C17.5277 21.6724 16.8759 21.959 16.1779 21.9753C15.6768 21.9753 15.0725 21.8327 14.3691 21.5434C13.6633 21.2555 13.0148 21.113 12.4217 21.113C11.7998 21.113 11.1327 21.2555 10.4193 21.5434C9.70469 21.8327 9.12904 21.9834 8.68892 21.9984C8.01957 22.0269 7.35239 21.7322 6.68644 21.113C6.26139 20.7422 5.72974 20.1067 5.09285 19.2063C4.40951 18.2449 3.84772 17.13 3.4076 15.8589C2.93624 14.486 2.69995 13.1565 2.69995 11.8694C2.69995 10.3951 3.01853 9.12345 3.65665 8.05784C4.15815 7.20191 4.82533 6.52672 5.66035 6.03105C6.49537 5.53539 7.39761 5.2828 8.36925 5.26664C8.9009 5.26664 9.59809 5.43109 10.4645 5.75429C11.3284 6.07858 11.8832 6.24303 12.1264 6.24303C12.3082 6.24303 12.9245 6.05074 13.9692 5.66738C14.9571 5.31186 15.7909 5.16466 16.474 5.22264C18.3249 5.37202 19.7155 6.10167 20.6402 7.41619C18.9849 8.4192 18.166 9.82403 18.1823 11.6262C18.1972 13.03 18.7065 14.1981 19.7073 15.1256C20.1609 15.5561 20.6674 15.8888 21.231 16.1251C21.1087 16.4795 20.9797 16.819 20.8426 17.1449ZM16.5975 0.440369C16.5975 1.54062 16.1956 2.56792 15.3944 3.51878C14.4275 4.64917 13.258 5.30236 11.9898 5.19929C11.9736 5.06729 11.9642 4.92837 11.9642 4.78239C11.9642 3.72615 12.424 2.59576 13.2406 1.67152C13.6483 1.20356 14.1667 0.814453 14.7955 0.504058C15.4229 0.198295 16.0163 0.0292007 16.5744 0.000244141C16.5907 0.147331 16.5975 0.294426 16.5975 0.440355V0.440369Z"
+                            fill="white" />
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            loop: true,
+            autoplay: {
+                delay: 5000
+            },
+            freeMode: true,
+            breakpoints: {
+                1320: {
+                    slidesPerView: 4
+                },
+                1000: {
+                    slidesPerView: 3
+                },
+                700: {
+                    slidesPerView: 2
+                },
+                100: {
+                    slidesPerView: 1
+                }
+            }
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
